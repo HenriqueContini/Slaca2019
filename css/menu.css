@@ -17,7 +17,7 @@
 .menu>.titulo__branco {
     align-items: center;
     background: linear-gradient(#FFB354, #EE7A3A);
-    display: flex;
+    display: none;
     height: 58px;
     justify-content: center;
     padding: 10px 0;
@@ -55,5 +55,9 @@
     .menu {
         display: block;
         position: static;
+    }
+
+    .menu>.titulo__branco {
+        display: flex;
     }
 }
