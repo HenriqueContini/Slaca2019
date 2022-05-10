@@ -1,0 +1,28 @@
+.rodape {
+    align-items: center;
+    border-top: 1px solid #E7E7E7;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.rodape__logo {
+    max-width: 200px;
+}
+
+.rodape__textos {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.rodape__texto__negrito {
+    font-weight: bold;
+}
+
+@media screen and (min-width: 1024px) {
+    .rodape {
+        flex-direction: row;
+        column-gap: 20px;
+    }
+}

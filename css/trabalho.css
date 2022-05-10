@@ -1,0 +1,107 @@
+.trabalho {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.trabalho>.titulo__laranja {
+    align-self: center;
+}
+
+.trabalho__botoes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 5px;
+}
+
+.trabalho__botao {
+    background-color: var(--laranja);
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    padding: 8px 10px 8px 30px;
+}
+
+.trabalho__botao:hover {
+    background-color: var(--laranja-secundario);
+    cursor: pointer;
+}
+
+.botao__download {
+    background-image: url(../src/icone-download.svg);
+    background-position: 8px center;
+    background-repeat: no-repeat;
+}
+
+.botao__favorito {
+    background-image: url(../src/icone-favorito.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.botao__doi {
+    background-image: url(../src/icone-doi.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.trabalho__texto__link {
+    box-sizing: border-box;
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-top: 15px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.trabalho__texto__link:hover {
+    color: var(--laranja-secundario);
+    text-decoration: underline;
+}
+
+.trabalho__video {
+    height: 200px;
+    width: 100%;
+}
+
+.trabalho__detalhes {
+    border-radius: 5px;
+    border: 1px solid #ECECEC;
+}
+
+.trabalho__detalhes__titulo {
+    background-color: var(--laranja-claro);
+    border-bottom: 1px solid #ECECEC;
+    padding: 10px;
+}
+
+.trabalho__detalhes>.texto{
+    padding: 5px 10px;
+}
+
+.trabalho__detalhes>.texto>span {
+    color: var(--fonte-cinza-escuro);
+    font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+    .trabalho__video {
+        height: 350px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .trabalho {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        column-gap: 30px;
+    }
+
+    .trabalho__video {
+        margin: auto 0;
+    }
+}

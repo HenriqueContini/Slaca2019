@@ -1,0 +1,32 @@
+.resumo__texto {
+    border-radius: 5px;
+    border: 1px solid #ECECEC;
+}
+
+.resumo__texto__titulo {
+    background-color: var(--laranja-claro);
+    border-bottom: 1px solid #ECECEC;
+    padding: 10px;
+}
+
+.resumo__texto>.texto {
+    padding: 5px 10px;
+}
+
+.resumo__ver-mais {
+    color: var(--laranja);
+    font-weight: 700;
+}
+
+.resumo__ver-mais:hover {
+    cursor: pointer;
+    color: var(--laranja-secundario);
+}
+
+.resumo__texto-completo {
+    display: none;
+}
+
+.resumo__texto-completo--ativo {
+    display: inline;
+}
